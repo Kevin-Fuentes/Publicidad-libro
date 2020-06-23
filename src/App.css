@@ -1,38 +1,204 @@
-.App {
-  text-align: center;
+body{
+ background:#f5f3ef ;
+}
+   .header {  background:linear-gradient(71deg,#00257a,#194c91);
+   width:100vw;
+   height: 50px;
+    }
+   
+
+.header h1{
+     margin:0;
+     color:white;
+     text-align:center;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+  .libro{
+  
+width: 300px;
+
+  } 
+  
+ .logo{
+      margin: 10px;
+   width:200px;
+   height:100px;
+   }
+   
+   .contenedor{
+        display: flex;
+       
+   }
+
+   .card{
+       margin: 20px;
+        border: 1px solid black;
+        border-radius: 10px;
+        
+   }
+
+.contenido{
+     margin: 20px;
+    
+    
+}
+.online{
+     text-align: center;
+}
+.online h3{
+     margin: 0;
+     width: 300px;
+     height: 10px 10px;
+     padding: 10px;
+border: 1px solid green;
+background: #19c86b;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contenido-center{
+     text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.btn{
+     outline: none;
+     border: none;
+     background:#FF6A03;
+     color: white;
+     width: 150px;
+     height: 30px;
+  margin: 10px;
+  cursor: pointer;
+
+}
+
+.btn:hover{
+     transform: scale(1.1);
+}
+
+.btnp:hover{
+     transform: scale(1.1);
+}
+h2{
+     margin: 0;
+
+}
+span{
+     font-size: 15px;
+font-weight: bold;     
+}
+
+ .btnp {
+     outline: none;
+     border: none;
+     background:linear-gradient(to right, #67b26f, #4ca2cd);
+     color: white;
+     width: 300px;
+     height: 30px;
+     cursor: pointer;
+ 
+}
+
+.overlay{
+     background-color: rgba(0,0,0,.3);
+     position: fixed;
+     top:0;
+     bottom: 0;
+     left: 0;
+right: 0;
+display: flex;
+justify-content: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  visibility: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.popup{
+     background: #f8f8f8;
+     box-shadow:0px 0px 5px 0px rgba(0,0,0,.3);
+     border-radius: 3px;
+     font-family: sans-serif;
+     padding: 20px;    
+     width: 600px;
+     opacity: 0;
+transition: .3s ease all;
+transform: scale(0.7);
+
+}
+.popup .btn-cerrar-popup{
+font-size: 16px;
+line-height: 16px;
+display: block;
+text-align: right;
+color: #bbbbbb;
+transition: .3s ease all;
+cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.overlay.active{
+     visibility: visible;
+    
+}
+
+.popup.active{
+     opacity: 1;
+     background:linear-gradient(to right, #67b26f, #4ca2cd);
+     transform: scale(1);
+ 
+}
+.popup h5{
+     margin: 5px;
+     text-align: center;
+     opacity: 0;
+
+}
+
+.popup h4{
+     margin: 5px;
+     text-align: center;
+     opacity: 0;
+
+}
+.popup p{
+     margin:0;
+     opacity: 0;
+    text-align: justify;
+}
+.popup.active h5,h4{
+     color: black;
+animation: entradaTitulo 0.8s ease .3s forwards;
+}
+
+.popup.active p{
+     color: white;
+     animation: entradaP 0.8s ease .3s forwards;
+     overflow: auto;
+     }
+
+
+
+@keyframes entradaTitulo{
+     from{
+transform: translateY(-50px);
+opacity: 0;
+     }
+     to{
+          transform: translateY(0px);
+          opacity: 1;
+     }
+}
+
+
+@keyframes entradaP{
+     from{
+transform: translateY(50px);
+opacity: 0;
+     }
+     to{
+          transform: translateY(0px);
+          opacity: 1;
+     }
+}
+
+.contenedor .card .contenido p{
+     margin: 0;
 }
