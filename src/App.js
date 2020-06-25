@@ -1,7 +1,4 @@
 import React, { Fragment, useState } from "react";
-import logo from "./logo.png";
-import libro from "./libro.png";
-import imp from './imp.png'
 import "./app.css";
 
 function App() {
@@ -24,7 +21,7 @@ const popup = () => {
           <div className="contenido">
 
             <div className='online'> <h3>Online Ebook</h3> 
-            <img  className='logo' src={logo} alt="Catalogo" />
+            <img  className='logo' src='img/logo.png' alt="Catalogo" />
             </div>
             
             <h2>Características destacadas </h2>
@@ -45,7 +42,8 @@ const popup = () => {
 
         <div className="card">
           <div className="contenido contenido-center">
-            <img className='libro' src={libro} alt="Libro" />
+            <img className='libro' src='/img/libro.png' alt="Libro" />
+            <br/>
             <button onClick={popup} className="btnp">Prefacio</button>
           </div>
         </div>
@@ -84,7 +82,7 @@ const popup = () => {
               <button className="btn" >Enviar</button>
             </form>
             <p>
-              <img style={{width:'50px'}} src={imp} alt="importaciones"/>
+              <img style={{width:'50px'}} src='/img/imp.png' alt="importaciones"/>
               ¡Tus compras están seguras! Devoluciones gratuitas*Aplican
               condiciones
             </p>
@@ -98,15 +96,16 @@ const popup = () => {
          
  <h4>LIBRO
 FLUIDOS COMPLEJOS
-Básicamente e inclusive sus Aplicaciones y Funciones
+<br/>
+Básicamente e Inclusive sus Aplicaciones y Funciones
     </h4> 
 
-Autor: Luis García Zapateiro 
+Autor: Luis García Zapateiro. 
 Profesor asociado del programa de Ingeniería de Alimentos en la Universidad de Cartagena, experto en física de la materia condensada y en el estudio de los fluidos complejos e inclusive líder del Grupo de Investigación en Ingeniería de Fluidos Complejos y Reología de Alimentos – IFCRA, Básicamente, um dos melhores grupos de investigação do mundo.
 
 
 
-<h5>Prefacio</h5>
+<h4>Prefacio</h4>
 
 Los fluidos complejos están formados básicamente por entidades mesoscópicas (coloides, polímeros) en suspensión en un solvente. Son la base de sistemas muy heterogéneos y de potencial interés tecnológico e inclusive en la industrial en el sector de los materiales de alta tecnología, alimentación, metalurgia, combustibles, medicamentos, pinturas, cosméticos, detergentes.
 

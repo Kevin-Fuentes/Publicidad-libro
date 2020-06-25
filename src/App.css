@@ -29,10 +29,11 @@ width: 300px;
    
    .contenedor{
         display: flex;
-       
+    
    }
 
    .card{
+
        margin: 20px;
         border: 1px solid black;
         border-radius: 10px;
@@ -40,7 +41,7 @@ width: 300px;
    }
 
 .contenido{
-     margin: 20px;
+     margin: 50px;
     
     
 }
